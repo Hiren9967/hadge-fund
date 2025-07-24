@@ -1,0 +1,744 @@
+ <!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>fund</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="css/hedge.css">
+    
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg  navbar-dark sticky-top newheader">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img src="./image/logo.png" alt="logo"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="fund.html">Funds</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="SIP.HTML">Sip</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="plan now.html">Plan Now</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="service.html">Service</a>
+                    </li>
+                </ul>
+
+            </div>
+            <a class="cont-us" href="Contact Us.html">Contact Us</a>
+        </div>
+    </nav>
+
+    <div class="offcanvas offcanvas-start text-bg-dark" id="collapsibleNavbar">
+        <div class="offcanvas-header">
+          <h1 class="offcanvas-title"> <a class="navbar-brand" href="#"><img src="./image/logo.png" alt="logo"></a></h1>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="fund.html">Funds</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="SIP.HTML">Sip</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="plan now.html">Plan Now</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="service.html">Service</a>
+                    </li>
+                </ul>
+           
+              <button class="btn btn-secondary" type="button"><a href="Contact Us.html">Contact Us</a></button>
+        </div>
+    </div>
+    <!-- List of Mutual Fund Schemes -->
+    <div class="container text-light">
+        <div class="Mutual-Fund-titel">
+            <h2>List of Mutual Fund Schemes</h2>
+            <p>Explore a list of mutual fund schemes offered by Kotak MF, including equity fund, debt fund, hybrid fund, etc. Invest in mutual fund schemes online now!</p>
+        </div>
+        <div class="filter">
+            <p>filter</p>
+            <div class="alert  alert-dismissible">
+              <small>all</small>
+               <button type="button" class="btn-close btn-close-white" data-bs-dismiss="alert"></button>
+            </div>
+            <div class="alert  alert-dismissible">
+              <small>direct</small>
+               <button type="button" class="btn-close btn-close-white" data-bs-dismiss="alert"></button>
+            </div>
+            <div class="alert  alert-dismissible">
+              <small>open ended</small>
+               <button type="button" class="btn-close btn-close-white" data-bs-dismiss="alert"></button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-3 col-4">
+                <span>Filter scheme By</span>
+                <div class="scheme-list">
+                    <h6>Type of Funds</h6>
+                    <ul class="type-list">
+                        <li>
+                            <input type="checkbox" id="">
+                            <label>direct</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="">
+                            <label>regular</label>
+                        </li>
+                    </ul>
+                    <h6>Funds</h6>
+                    <ul class="type-list">
+                        <li>
+                            <input type="checkbox" id="">
+                            <label>all (91)</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="">
+                            <label>equity (21)</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="">
+                            <label>index (26)</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="">
+                            <label>tex saver (1)</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="">
+                            <label>hybrid (6)</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="">
+                            <label>FOF (8)</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="">
+                            <label>debt (15)</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="">
+                            <label>eTF (14)</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="">
+                            <label>FMP (0)</label>
+                        </li>
+                    </ul>
+                    <h6>Investment Horizon</h6>
+                    <ul class="type-list">
+                        <li>
+                            <input type="checkbox" id="">
+                            <label>5 years And above</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="">
+                            <label>3 years And above</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="">
+                            <label>2.5 years And above</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="">
+                            <label>2 years and above</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="">
+                            <label>1-1.5 years</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="">
+                            <label>1 years And above</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="">
+                            <label>6 months And above</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="">
+                            <label>3 months And above</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="">
+                            <label>7 day to a month</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="">
+                            <label>1 day</label>
+                        </li>
+                    </ul>
+                    <h6>Return (Since Inception)</h6>
+                    <ul class="type-list">
+                        <li class="d-flex justify-content-between">
+                            <span>Minimum</span>
+                            <span>3%</span>
+                        </li>
+                            <div class="progress-fund">
+                                <div class="progress-bar-fund">30%</div>
+                            </div>
+                    </ul>
+                    <h6>Category of Funds</h6>
+                    <ul class="type-list">
+                        <li>
+                            <input type="checkbox" id="">
+                            <label>open ended</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="">
+                            <label>close ended</label>
+                        </li>
+                    </ul>
+                    <h6>Risk Label</h6>
+                    <ul class="type-list">
+                        <li>
+                            <input type="checkbox" id="">
+                            <label>low risk</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="">
+                            <label>low to moderate risk</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="">
+                            <label>moderate risk</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="">
+                            <label>2moderately high risk</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="">
+                            <label>high risk</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="">
+                            <label>very high risk</label>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-lg-9 col-8">
+                <div class="funds-in ">
+                    <div class="row">
+                        <div class="col-lg-4 col-6">
+                           <div class="card text-light">
+                            <div class="card-in">
+                                <h6>Kotak <strong>CRISIL IBX</strong> financial services 3 to 6 montha debt index fund</h6>
+                                <span>derect-growth</span>
+                            </div>
+                            <div class="card-in">
+                                <p>NFO start date</p>
+                                <span>21 feb 2025</span>
+                            </div>
+                            <div class="card-in">
+                                <h6>Since Inception</h6>
+                                <div class="since-year ">
+                                    <div class="in-since d-flex justify-content-between ">
+                                        <span>5y</span><span>3y</span><span>1y</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-in">
+                                <span>returns in CAGR As of feb 21 2025</span>
+                                <span class="parcent"><i class="fa-solid fa-angle-up"></i>17.58%</span>
+                            </div>
+                            <div class="card-in">
+                                <p class="m-0">worth of investment in last 3 year</p>
+                                <span>$10.000 investment growth to</span>
+                                <div class="total-amo d-flex justify-content-between mt-2">
+                                    <h6>total Amount:</h6><span>$14,860</span>
+                                </div>
+                            </div>
+                            <a href="#">inquery</a>
+                        </div>
+                        </div>
+                        <div class="col-lg-4 col-6">
+                           <div class="card text-light">
+                            <div class="card-in">
+                                <h6>Kotak <strong>CRISIL IBX</strong> financial services 3 to 6 montha debt index fund</h6>
+                                <span>derect-growth</span>
+                            </div>
+                            <div class="card-in">
+                                <p>NFO start date</p>
+                                <span>21 feb 2025</span>
+                            </div>
+                            <div class="card-in">
+                                <h6>Since Inception</h6>
+                                <div class="since-year ">
+                                    <div class="in-since d-flex justify-content-between ">
+                                        <span>5y</span><span>3y</span><span>1y</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-in">
+                                <span>returns in CAGR As of feb 21 2025</span>
+                                <span class="parcent"><i class="fa-solid fa-angle-up"></i>17.58%</span>
+                            </div>
+                            <div class="card-in">
+                                <p class="m-0">worth of investment in last 3 year</p>
+                                <span>$10.000 investment growth to</span>
+                                <div class="total-amo d-flex justify-content-between mt-2">
+                                    <h6>total Amount:</h6><span>$14,860</span>
+                                </div>
+                            </div>
+                            <a href="#">inquery</a>
+                        </div>
+                        </div>
+                        <div class="col-lg-4 col-6">
+                           <div class="card text-light">
+                            <div class="card-in">
+                                <h6>Kotak <strong>CRISIL IBX</strong> financial services 3 to 6 montha debt index fund</h6>
+                                <span>derect-growth</span>
+                            </div>
+                            <div class="card-in">
+                                <p>NFO start date</p>
+                                <span>21 feb 2025</span>
+                            </div>
+                            <div class="card-in">
+                                <h6>Since Inception</h6>
+                                <div class="since-year ">
+                                    <div class="in-since d-flex justify-content-between ">
+                                        <span>5y</span><span>3y</span><span>1y</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-in">
+                                <span>returns in CAGR As of feb 21 2025</span>
+                                <span class="parcent"><i class="fa-solid fa-angle-up"></i>17.58%</span>
+                            </div>
+                            <div class="card-in">
+                                <p class="m-0">worth of investment in last 3 year</p>
+                                <span>$10.000 investment growth to</span>
+                                <div class="total-amo d-flex justify-content-between mt-2">
+                                    <h6>total Amount:</h6><span>$14,860</span>
+                                </div>
+                            </div>
+                            <a href="#">inquery</a>
+                        </div>
+                        </div>
+                        <div class="col-lg-4 col-6">
+                            <div class="card text-light">
+                            <div class="card-in">
+                                <h6>Kotak <strong>CRISIL IBX</strong> financial services 3 to 6 montha debt index fund</h6>
+                                <span>derect-growth</span>
+                            </div>
+                            <div class="card-in">
+                                <p>NFO start date</p>
+                                <span>21 feb 2025</span>
+                            </div>
+                            <div class="card-in">
+                                <h6>Since Inception</h6>
+                                <div class="since-year ">
+                                    <div class="in-since d-flex justify-content-between ">
+                                        <span>5y</span><span>3y</span><span>1y</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-in">
+                                <span>returns in CAGR As of feb 21 2025</span>
+                                <span class="parcent"><i class="fa-solid fa-angle-up"></i>17.58%</span>
+                            </div>
+                            <div class="card-in">
+                                <p class="m-0">worth of investment in last 3 year</p>
+                                <span>$10.000 investment growth to</span>
+                                <div class="total-amo d-flex justify-content-between mt-2">
+                                    <h6>total Amount:</h6><span>$14,860</span>
+                                </div>
+                            </div>
+                            <a href="#">inquery</a>
+                        </div>
+                        </div>
+                        <div class="col-lg-4 col-6">
+                            <div class="card text-light">
+                            <div class="card-in">
+                                <h6>Kotak <strong>CRISIL IBX</strong> financial services 3 to 6 montha debt index fund</h6>
+                                <span>derect-growth</span>
+                            </div>
+                            <div class="card-in">
+                                <p>NFO start date</p>
+                                <span>21 feb 2025</span>
+                            </div>
+                            <div class="card-in">
+                                <h6>Since Inception</h6>
+                                <div class="since-year ">
+                                    <div class="in-since d-flex justify-content-between ">
+                                        <span>5y</span><span>3y</span><span>1y</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-in">
+                                <span>returns in CAGR As of feb 21 2025</span>
+                                <span class="parcent"><i class="fa-solid fa-angle-up"></i>17.58%</span>
+                            </div>
+                            <div class="card-in">
+                                <p class="m-0">worth of investment in last 3 year</p>
+                                <span>$10.000 investment growth to</span>
+                                <div class="total-amo d-flex justify-content-between mt-2">
+                                    <h6>total Amount:</h6><span>$14,860</span>
+                                </div>
+                            </div>
+                            <a href="#">inquery</a>
+                        </div>
+                        </div>
+                        <div class="col-lg-4 col-6">
+                           <div class="card text-light">
+                            <div class="card-in">
+                                <h6>Kotak <strong>CRISIL IBX</strong> financial services 3 to 6 montha debt index fund</h6>
+                                <span>derect-growth</span>
+                            </div>
+                            <div class="card-in">
+                                <p>NFO start date</p>
+                                <span>21 feb 2025</span>
+                            </div>
+                            <div class="card-in">
+                                <h6>Since Inception</h6>
+                                <div class="since-year ">
+                                    <div class="in-since d-flex justify-content-between ">
+                                        <span>5y</span><span>3y</span><span>1y</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-in">
+                                <span>returns in CAGR As of feb 21 2025</span>
+                                <span class="parcent"><i class="fa-solid fa-angle-up"></i>17.58%</span>
+                            </div>
+                            <div class="card-in">
+                                <p class="m-0">worth of investment in last 3 year</p>
+                                <span>$10.000 investment growth to</span>
+                                <div class="total-amo d-flex justify-content-between mt-2">
+                                    <h6>total Amount:</h6><span>$14,860</span>
+                                </div>
+                            </div>
+                            <a href="#">inquery</a>
+                        </div>
+                        </div>
+                        <div class="col-lg-4 col-6">
+                           <div class="card text-light">
+                            <div class="card-in">
+                                <h6>Kotak <strong>CRISIL IBX</strong> financial services 3 to 6 montha debt index fund</h6>
+                                <span>derect-growth</span>
+                            </div>
+                            <div class="card-in">
+                                <p>NFO start date</p>
+                                <span>21 feb 2025</span>
+                            </div>
+                            <div class="card-in">
+                                <h6>Since Inception</h6>
+                                <div class="since-year ">
+                                    <div class="in-since d-flex justify-content-between ">
+                                        <span>5y</span><span>3y</span><span>1y</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-in">
+                                <span>returns in CAGR As of feb 21 2025</span>
+                                <span class="parcent"><i class="fa-solid fa-angle-up"></i>17.58%</span>
+                            </div>
+                            <div class="card-in">
+                                <p class="m-0">worth of investment in last 3 year</p>
+                                <span>$10.000 investment growth to</span>
+                                <div class="total-amo d-flex justify-content-between mt-2">
+                                    <h6>total Amount:</h6><span>$14,860</span>
+                                </div>
+                            </div>
+                            <a href="#">inquery</a>
+                        </div>
+                        </div>
+                        <div class="col-lg-4 col-6">
+                           <div class="card text-light">
+                            <div class="card-in">
+                                <h6>Kotak <strong>CRISIL IBX</strong> financial services 3 to 6 montha debt index fund</h6>
+                                <span>derect-growth</span>
+                            </div>
+                            <div class="card-in">
+                                <p>NFO start date</p>
+                                <span>21 feb 2025</span>
+                            </div>
+                            <div class="card-in">
+                                <h6>Since Inception</h6>
+                                <div class="since-year ">
+                                    <div class="in-since d-flex justify-content-between ">
+                                        <span>5y</span><span>3y</span><span>1y</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-in">
+                                <span>returns in CAGR As of feb 21 2025</span>
+                                <span class="parcent"><i class="fa-solid fa-angle-up"></i>17.58%</span>
+                            </div>
+                            <div class="card-in">
+                                <p class="m-0">worth of investment in last 3 year</p>
+                                <span>$10.000 investment growth to</span>
+                                <div class="total-amo d-flex justify-content-between mt-2">
+                                    <h6>total Amount:</h6><span>$14,860</span>
+                                </div>
+                            </div>
+                            <a href="#">inquery</a>
+                        </div>
+                        </div>
+                        <div class="col-lg-4 col-6">
+                            <div class="card text-light">
+                            <div class="card-in">
+                                <h6>Kotak <strong>CRISIL IBX</strong> financial services 3 to 6 montha debt index fund</h6>
+                                <span>derect-growth</span>
+                            </div>
+                            <div class="card-in">
+                                <p>NFO start date</p>
+                                <span>21 feb 2025</span>
+                            </div>
+                            <div class="card-in">
+                                <h6>Since Inception</h6>
+                                <div class="since-year ">
+                                    <div class="in-since d-flex justify-content-between ">
+                                        <span>5y</span><span>3y</span><span>1y</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-in">
+                                <span>returns in CAGR As of feb 21 2025</span>
+                                <span class="parcent"><i class="fa-solid fa-angle-up"></i>17.58%</span>
+                            </div>
+                            <div class="card-in">
+                                <p class="m-0">worth of investment in last 3 year</p>
+                                <span>$10.000 investment growth to</span>
+                                <div class="total-amo d-flex justify-content-between mt-2">
+                                    <h6>total Amount:</h6><span>$14,860</span>
+                                </div>
+                            </div>
+                            <a href="#">inquery</a>
+                        </div>
+                        </div>
+                        <div class="col-lg-4 col-6">
+                          <div class="card text-light">
+                            <div class="card-in">
+                                <h6>Kotak <strong>CRISIL IBX</strong> financial services 3 to 6 montha debt index fund</h6>
+                                <span>derect-growth</span>
+                            </div>
+                            <div class="card-in">
+                                <p>NFO start date</p>
+                                <span>21 feb 2025</span>
+                            </div>
+                            <div class="card-in">
+                                <h6>Since Inception</h6>
+                                <div class="since-year ">
+                                    <div class="in-since d-flex justify-content-between ">
+                                        <span>5y</span><span>3y</span><span>1y</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-in">
+                                <span>returns in CAGR As of feb 21 2025</span>
+                                <span class="parcent"><i class="fa-solid fa-angle-up"></i>17.58%</span>
+                            </div>
+                            <div class="card-in">
+                                <p class="m-0">worth of investment in last 3 year</p>
+                                <span>$10.000 investment growth to</span>
+                                <div class="total-amo d-flex justify-content-between mt-2">
+                                    <h6>total Amount:</h6><span>$14,860</span>
+                                </div>
+                            </div>
+                            <a href="#">inquery</a>
+                        </div>
+                        </div>
+                        <div class="col-lg-4 col-6">
+                          <div class="card text-light">
+                            <div class="card-in">
+                                <h6>Kotak <strong>CRISIL IBX</strong> financial services 3 to 6 montha debt index fund</h6>
+                                <span>derect-growth</span>
+                            </div>
+                            <div class="card-in">
+                                <p>NFO start date</p>
+                                <span>21 feb 2025</span>
+                            </div>
+                            <div class="card-in">
+                                <h6>Since Inception</h6>
+                                <div class="since-year ">
+                                    <div class="in-since d-flex justify-content-between ">
+                                        <span>5y</span><span>3y</span><span>1y</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-in">
+                                <span>returns in CAGR As of feb 21 2025</span>
+                                <span class="parcent"><i class="fa-solid fa-angle-up"></i>17.58%</span>
+                            </div>
+                            <div class="card-in">
+                                <p class="m-0">worth of investment in last 3 year</p>
+                                <span>$10.000 investment growth to</span>
+                                <div class="total-amo d-flex justify-content-between mt-2">
+                                    <h6>total Amount:</h6><span>$14,860</span>
+                                </div>
+                            </div>
+                            <a href="#">inquery</a>
+                        </div>
+                        </div>
+                        <div class="col-lg-4 col-6">
+                           <div class="card text-light">
+                            <div class="card-in">
+                                <h6>Kotak <strong>CRISIL IBX</strong> financial services 3 to 6 montha debt index fund</h6>
+                                <span>derect-growth</span>
+                            </div>
+                            <div class="card-in">
+                                <p>NFO start date</p>
+                                <span>21 feb 2025</span>
+                            </div>
+                            <div class="card-in">
+                                <h6>Since Inception</h6>
+                                <div class="since-year ">
+                                    <div class="in-since d-flex justify-content-between ">
+                                        <span>5y</span><span>3y</span><span>1y</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-in">
+                                <span>returns in CAGR As of feb 21 2025</span>
+                                <span class="parcent"><i class="fa-solid fa-angle-up"></i>17.58%</span>
+                            </div>
+                            <div class="card-in">
+                                <p class="m-0">worth of investment in last 3 year</p>
+                                <span>$10.000 investment growth to</span>
+                                <div class="total-amo d-flex justify-content-between mt-2">
+                                    <h6>total Amount:</h6><span>$14,860</span>
+                                </div>
+                            </div>
+                            <a href="#">inquery</a>
+                        </div>
+                        </div>
+                        <div class="col-lg-4 col-6">
+                          <div class="card text-light">
+                            <div class="card-in">
+                                <h6>Kotak <strong>CRISIL IBX</strong> financial services 3 to 6 montha debt index fund</h6>
+                                <span>derect-growth</span>
+                            </div>
+                            <div class="card-in">
+                                <p>NFO start date</p>
+                                <span>21 feb 2025</span>
+                            </div>
+                            <div class="card-in">
+                                <h6>Since Inception</h6>
+                                <div class="since-year ">
+                                    <div class="in-since d-flex justify-content-between ">
+                                        <span>5y</span><span>3y</span><span>1y</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-in">
+                                <span>returns in CAGR As of feb 21 2025</span>
+                                <span class="parcent"><i class="fa-solid fa-angle-up"></i>17.58%</span>
+                            </div>
+                            <div class="card-in">
+                                <p class="m-0">worth of investment in last 3 year</p>
+                                <span>$10.000 investment growth to</span>
+                                <div class="total-amo d-flex justify-content-between mt-2">
+                                    <h6>total Amount:</h6><span>$14,860</span>
+                                </div>
+                            </div>
+                            <a href="#">inquery</a>
+                        </div>
+                        </div>
+                        <div class="col-lg-4 col-6">
+                         <div class="card text-light">
+                            <div class="card-in">
+                                <h6>Kotak <strong>CRISIL IBX</strong> financial services 3 to 6 montha debt index fund</h6>
+                                <span>derect-growth</span>
+                            </div>
+                            <div class="card-in">
+                                <p>NFO start date</p>
+                                <span>21 feb 2025</span>
+                            </div>
+                            <div class="card-in">
+                                <h6>Since Inception</h6>
+                                <div class="since-year ">
+                                    <div class="in-since d-flex justify-content-between ">
+                                        <span>5y</span><span>3y</span><span>1y</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-in">
+                                <span>returns in CAGR As of feb 21 2025</span>
+                                <span class="parcent"><i class="fa-solid fa-angle-up"></i>17.58%</span>
+                            </div>
+                            <div class="card-in">
+                                <p class="m-0">worth of investment in last 3 year</p>
+                                <span>$10.000 investment growth to</span>
+                                <div class="total-amo d-flex justify-content-between mt-2">
+                                    <h6>total Amount:</h6><span>$14,860</span>
+                                </div>
+                            </div>
+                            <a href="#">inquery</a>
+                        </div>
+                    </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- fundfooter -->
+    <div class="fund-footer text-light pt-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-12">
+                   <a class="footer-logo" href="#"><img src="./image/logo.png" alt="logo"></a>
+                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration</p>
+                </div>
+                <div class="col-lg-3 col-6">
+                    <div class="quick-links">
+                        <h4>quick links</h4>
+                        <ul class="link-menu">
+                            <li><a href="#">home</a></li>
+                            <li><a href="#">funds</a></li>
+                            <li><a href="#">SIP</a></li>
+                            <li><a href="#">plan Now</a></li>
+                            <li><a href="#">service</a></li>
+                            <li><a href="#">Contact us</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-6">
+                    <div class="quick-links">
+                        <h4>quick links</h4>
+                        <ul class="link-menu">
+                            <li><a href="#">privacy policy</a></li>
+                            <li><a href="#">term & condition</a></li>
+                            <li><a href="#">support</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="fund-end">
+                <div class="icon">
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                </div>
+                <p>copyright @ 2025 all rights reserved.</p>
+            </div>
+        </div>
+    </div>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</HTML>

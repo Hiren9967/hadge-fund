@@ -1,0 +1,821 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+h1,h2,h3,h4,h5,h6{
+  font-family: "EB Garamond", serif;
+}
+p{
+    font-family: "Lato", sans-serif;
+    color: #b3b3b3;
+}
+.navbar-brand{
+   width: 5%;
+}
+.navbar-brand img{
+   width:100%;
+}
+.nav-item a {
+  color: white;
+  z-index: 99;
+}
+
+.newheader {
+  background-color: rgb(0 0 0 / 80%);
+}
+
+.cont-us {
+  text-decoration: none;
+  background-color: white;
+  color: black;
+  border-radius: 10px;
+  padding: 7px 15px;
+  transition-property:background-color,color ;
+  transition-duration: 1s;
+}
+.cont-us:hover{
+  background-color:#252525;
+  color:  white;
+}
+.btn a{
+  text-decoration: none;
+  color: white;
+}
+/*     banner */
+.banner-img {
+  background-image: url(../image/adding-coins.avif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+/*  height: 90%;*/
+padding: 150px 0;
+}
+
+.inside-banner {
+  width: 37%;
+/*  margin-top: 150px;*/
+  color: white;
+}
+
+.Inquery {
+  text-decoration: none;
+  background-color: #ffffff;
+  color: black;
+  border-radius: 10px;
+  padding: 7px 15px;
+  transition-property:background-color,color ;
+  transition-duration: 1s;
+}
+.inside-banner a:hover{
+  background-color:#252525;
+  color:  white;
+}
+/*     our-funds */
+.our-funds {
+  background-color: black;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 26px;
+  align-content: center;
+}
+
+/* Hide default checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+} 
+
+/* The slider */
+ .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #3a3a3c;
+  transition: 0.4s;
+  border-radius: 26px;
+} 
+
+/* The slider circle */
+ .slider:before {
+  position: absolute;
+  content: "";
+  height: 18px;
+  width: 18px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%;
+} 
+
+/* Toggle ON styles */
+ input:checked+.slider {
+  background-color: #3a3a3c;
+} 
+
+input:checked+.slider:before {
+  transform: translateX(24px);
+} 
+
+
+.funds-detail ul {
+  border-bottom: 1px solid white;
+  padding: 0 0 8px 0;
+}
+
+.funds-detail ul li {
+  list-style: none;
+  padding: 0;
+  display: inline-block;
+  margin-right: 19px;
+}
+
+.funds-detail ul li a {
+  text-decoration: none;
+  color: grey;
+}
+
+.funds-detail ul li a:hover {
+  color: white;
+}
+.funds-footer a{
+  transition-property:background-color,color ;
+  transition-duration: 1s;
+}
+.funds-footer a:hover{
+  background-color:#252525;
+  color:  white;
+}
+.card {
+  background-color: #252525;
+  padding: 10px;
+  margin: 10px;
+}
+
+.card-in {
+  border-bottom: 1px solid white;
+  text-transform: capitalize;
+  padding: 0 0 6px 0;
+   margin: 0 0 5px 0;
+}
+
+.card-in p {
+  font-size: 13px;
+}
+
+.card-in span {
+  font-size: 13px;
+  display: block;
+}
+
+.in-since span {
+  border: 1px solid grey;
+  padding: 0px 10px;
+  border-radius: 11px;
+}
+
+.in-since span:hover {
+  background-color: grey;
+}
+
+.parcent {
+  color: #029221;
+}
+
+.total-amo {
+  align-items: center;
+}
+
+.card a {
+  text-decoration: none;
+  background-color: white;
+  color: black;
+  text-align: center;
+  text-transform: capitalize;
+  border-radius: 5px;
+  transition-property: background-color, color;
+  transition-duration: 1s;
+}
+
+.card a:hover {
+  background-color: black;
+  color: white;
+}
+
+.funds-footer p {
+  display: inline-block;
+}
+
+.funds-footer a {
+  text-decoration: none;
+  float: right;
+  background-color: rgb(255 255 255);
+  color: black;
+  padding: 7px 11px;
+  border-radius: 10px;
+}
+
+/* SIP Calculator: Plan your SIP Investment */
+.SIP {
+  background-color: #252525;
+}
+
+.SIP .container {
+  padding: 20px 0;
+}
+.sip-cal-titel{
+  padding: 0 15px;
+}
+.sip-cal-titel p {
+  font-size: 14px;
+  word-spacing: 2px;
+
+}
+
+.progress {
+  width: 100%;
+  height: 10px;
+  background-color: #e0e0e0;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.progress-bar {
+  height: 100%;
+  width: 50%;
+  background-color: #808080;
+  text-align: center;
+  line-height: 30px;
+  color: white;
+}
+.month-sip {
+  background-color: #3a3a3c;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 0 0 15px;
+}
+
+.sip-cal .row .col-lg-4 p {
+  font-size: 14px;
+}
+
+.month-sip span {
+  margin-top: 10px;
+  display: block;
+}
+
+.total-sip {
+    padding: 13px;
+    border-radius: 10px;
+    background-color: #3a3a3c;
+}
+
+.total-sip p {
+  margin: 5px 0;
+}
+
+.sip-footer i {
+  margin-left: 8px;
+}
+
+.sip-footer {
+    font-size: 0.9rem;
+    padding: 15px;
+}
+
+
+
+/*   Frequently Asked Questions */
+.Asked-Questions {
+  background-color: black;
+  padding: 32px 0;
+}
+
+.Frequently-titel {
+  margin: 0 245px;
+}
+
+.Questions-box {
+ margin: 0 150px;
+}
+
+.Questions-box-in {
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.Questions-box-in p {
+  font-size: 12px;
+  margin: 10px 0;
+}
+
+.Questions-box-in h6 {
+  display: inline-block;
+  margin: 0;
+}
+
+.Questions-box-in i {
+  float: right;
+}
+
+/*   fund-footer */
+.fund-footer {
+  background-color: black;
+ 
+}
+
+.quick-links ul {
+  padding: 0;
+}
+
+.link-menu li {
+  list-style: none;
+  padding: 0;
+  transition-property: margin-left;
+  transition-duration: 1s;
+}
+
+.link-menu li:hover {
+  margin-left: 10px;
+}
+
+.link-menu a {
+  text-decoration: none;
+  color: white;
+}
+
+/* footer */
+
+.icon {
+  display: inline-block;
+}
+
+.fund-end {
+  border-top: 1px solid white;
+  padding: 10px 0;
+}
+.footer-logo img{
+  width: 100%;
+}
+.logo-footer a{
+   width: 12%;
+    display: block;
+    margin-bottom: 10px;
+  }
+.icon i {
+  font-size: 20px;
+  margin: 0px 4px;
+  padding: 4px;
+  border-radius: 5px;
+}
+.icon i:hover{
+  background-color:white;
+  color: black;
+
+}
+.fund-end p {
+  display: inline-block;
+  float: right;
+}
+/* fund-page */
+
+body {
+  background-color: black;
+}
+
+.offcanvas-title {
+  width: 15%;
+}
+
+.navbar-brand img {
+  width: 100%;
+}
+
+.filter p {
+  display: inline-block;
+}
+
+.alert {
+  display: inline-block;
+  margin: 0;
+}
+
+.type-list {
+  border-bottom: 1px solid white;
+  padding: 10px 0 0 0;
+  text-transform: capitalize;
+}
+
+.type-list li {
+  list-style: none;
+  margin-bottom: 7px;
+}
+
+.type-list li label {
+  transition-property: margin-left;
+  transition-duration: 1s;
+}
+
+.type-list li label:hover {
+  margin-left: 10px;
+}
+
+.type-list input {
+  margin-right: 8px;
+}
+.progress-fund{
+  width: 100%;
+  height: 11px;
+  background-color: #e0e0e0;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.progress-bar-fund{
+  height: 100%;
+  width: 50%;
+  background-color: #808080;
+  text-align: center;
+  line-height: 13px;
+  color: white;
+}
+.card {
+    margin: 10px 0;
+}
+.card-in h6 {
+  font-size: 12px;
+  word-spacing: 5px;
+}
+
+.card-in p {
+  margin-bottom: 4px;
+  font-size: 13px;
+  color: white;
+}
+.footer-logo{
+  display: block;
+  width: 12%;
+  margin-bottom: 10px;
+}
+/* page-end */
+/*sip-page*/
+
+ .w-sip{
+        background-color: #252525;
+        padding: 24px 0;
+    }
+    .table tbody tr{
+           --bs-table-bg: #252525;
+    }
+    .table tbody td{
+         color: #b3b3b3;
+    }
+    .sip{
+      background-color: #252525 ;
+    }
+    
+/*sip-end*/
+/* plan-page */
+
+.tax-savigns{
+    background-color:#252525;
+  }
+  .t-inner img{
+    width: 100%;
+  }
+  .tax-savigns .row .col-lg-6 {
+      align-items: center;
+      align-content: center;
+  }
+/*  How ELSS Is better */
+  .elss-img{
+    background-color: #3a3a3c;
+    height: 100%;
+        border-radius: 10px;
+  }
+  .elss-img p{
+    font-size: 13px;
+    margin: 10px 0 0;
+  }
+
+    .IDLE-img img{
+        width: 100%;
+    }
+    .saving-ac{
+        border: 1px solid white;
+        border-radius: 10px;
+        padding: 0 0 15px 0;
+         margin: 5px 0;
+    }
+     .saving-ac h6{
+        margin: 15px 0;
+     }
+    .Compare-eLSS .table{
+    --bs-table-bg: #0e0e0e;
+    --bs-table-border-color: #000000;
+    --bs-table-color: #ffffff;
+    }
+/*     what do we seek from our IDLE money */
+    .t-inner p{
+        font-size: 16px;
+    }
+     .t-inner strong{
+        color: white;
+     }
+    .options h3{
+       color: white;
+    margin-bottom: 20px;
+    }
+    .saving-ac .col-6{
+   margin: 10px 0;
+  }
+/*     Child’s Education plan  */
+    .Education{
+        background-color: black;
+    }
+    .ELSS-better .row .col-6{
+        margin: 10px 0;
+    }
+    .Education-plan{
+        background-color:#252525;
+    }
+    .form-select{
+        display: inline-block;
+        width: 120px;
+        background-color: #0e0e0e;
+        color: #f9f4f4;
+    }
+    .Education-img img{
+        width: 100%;
+    }
+    .Education-plan strong{
+        color: white;
+        margin-right: 15px;
+    }
+    .month-sip a{
+        text-decoration: none;
+        color: white;
+    }
+    .month-sip strong{
+        display: block;
+        margin: 15px 0;
+    }
+/*  why do you need a retirement plan */
+     .retirement-dateil{
+        background-color: #575353;
+        border-radius: 10px;
+         padding: 10px;
+    }
+    .retirement-plan .progress {
+        width: 350px;
+        height: 10px;
+        display: inline-block;
+        margin: 0 10px;
+    }
+    .retirement-dateil-in p{
+        display: inline-block;
+    }
+    .retirement-dateil-in span{
+            float: right;
+    }
+    .retirement-dateil-in strong{
+            float: right;
+    }
+
+/* card */
+.info-card {
+            background-color: #292929;
+            padding: 15px;
+            border-radius: 8px;
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            margin-top: 10px;
+            width: 100%;
+        }
+        .info-card-header {
+            font-size: 1.2rem;
+            font-weight: bold;
+            text-align: center;
+            width: 100%;
+            padding-bottom: 10px;
+        }
+        .info-card-content {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            align-items: center;
+        }
+        .info-card-text {
+            display: flex;
+            flex-direction: column;
+            color: #bdbdbd;
+            margin: 0 10px;
+        }
+        
+/*         card-end */
+
+/* plan-end */
+/* sarvice-page */
+ .service-card{
+         background-color:#252525;
+     }   
+    .service-card .row .col-lg-3{
+       margin: 10px 0; 
+    }
+    .sarvice-in{
+        position: relative;
+        background-color: #3a3a3c;
+        padding: 10px;
+        border-radius: 10px;
+        height: 100%;
+    }
+    .sarvice-in a{
+        position: absolute;
+        bottom: 10px;
+        left: 10px;
+    }
+    .sarvice-img img{
+        width: 100%;
+    }
+    .sarvice-img {
+         width: 50px;
+         height: 50px;
+         margin-bottom: 10px;
+    }
+    .sarvice-in h4{
+        font-size: 18px;
+    }
+    .sarvice-in p{
+        font-size: 15px;
+        padding: 0 0 36px 0;
+    }
+    .sarvice-in strong{
+        color: white;
+    }
+/* sarvice-end */
+/* contact-us */
+.contact-from{
+         background-color:#252525;
+         margin: 50px 150px;
+         border-radius: 10px;
+             padding: 10px;
+    }
+   .contact .row input{
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+        border-radius: 10px;
+    }
+     .row textarea{
+        width: 100%;
+         border-radius: 10px;
+          padding: 10px;
+    }
+    
+    .but a{
+        text-decoration: none;
+        color:black;
+       padding: 7px 16px;
+        border-radius: 10px;
+        display: inline-block;
+        background-color: white;
+        margin: 10px 0;
+    }
+/*     contact-end */
+@media only screen and (min-width:992px) and (max-width:1024px){
+  .month-sip p{
+  font-size: 14px;
+}
+
+}
+/* tab */
+
+@media only screen and (min-width:768px) and (max-width:991px){
+  .offcanvas-title{
+        width: 15%;
+  }
+.navbar-brand {
+    width: 8%;
+}
+  .cont-us{
+    display: none;
+  }
+  .funds-in .row .col-md-6{
+     margin: 0 auto;
+  }
+.sip-cal .row .col-md-6{
+  margin: 0 auto;
+}
+.Frequently-titel {
+    margin: 0px 130px;
+}
+.Questions-box {
+    margin: 0 60px;
+}
+.logo-footer a {
+    width: 8%;
+}
+
+
+}
+
+/* mobile */
+@media only screen and (max-width: 767px){
+  .offcanvas-title{
+        width: 15%;
+  }
+.navbar-brand {
+    width: 8%;
+}
+  .cont-us{
+    display: none;
+  }
+
+  .inside-banner h1{
+    font-size: 17px;
+  }
+  .funds-in .row .col-md-6{
+     margin: 0 auto;
+  }
+  .card {
+     padding: 7px;
+     margin: 10px 0;
+  }
+  .card-in {
+     padding: 4px 0;
+   }
+  .card-in h6{
+     font-size: 11px;
+  }
+  .card-in p {
+    margin-bottom: 4px;
+  }
+  
+/*   sip */
+.sip-cal-titel{
+  padding: 0 12px;
+}
+.sip-footer{
+   padding: 0 12px;
+}
+.month-sip {
+    margin-bottom: 10px;
+}
+.Frequently-titel {
+    margin: 0 80px;
+}
+.Questions-box {
+    margin: 0px 60px;
+}
+.logo-footer a {
+    width: 8%;
+}
+/* plan-page */
+
+
+}
+
+@media only screen and (max-width: 576px){
+  .navbar-brand{
+          width: 12%;
+        }
+  .inside-banner h1{
+    font-size: 16px;
+  }
+  .inside-banner p{
+    font-size: 12px;
+  }
+  .funds-footer span{
+    font-size: 9px;
+  }
+  .funds-footer a{
+    font-size: 10px;
+  }
+  .Frequently-titel {
+    margin: 0 60px;
+}
+.Frequently-titel h3{
+  font-size: 22px;
+}
+.Frequently-titel p{
+  font-size: 10px;
+}
+.Questions-box {
+    margin: 0px auto;
+}
+.logo-footer a {
+        width: 12%;
+    }
+}
+
